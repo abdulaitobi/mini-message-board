@@ -1,0 +1,13 @@
+<h1>Message Details</h1>
+<div class="message-details">
+    <p><strong>
+            <%= message.user %>:
+        </strong>
+        <%= message.text %>
+    </p>
+    <small>
+        <%= message.added.toLocaleString() %>
+    </small>
+</div>
+
+<a href="/">Back to All Messages</a>

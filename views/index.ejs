@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Mini Message Board</title>
+</head>
+
+<body>
+    <h1>Mini Message Board</h1>
+    <ul>
+        <% messages.forEach((msg, index)=> { %>
+            <div class="message">
+                <p><strong>
+                        <%= msg.user %>:
+                    </strong>
+                    <%= msg.text %>
+                </p>
+                <small>
+                    <%= msg.added.toLocaleString() %>
+                </small>
+                <a href="/info/<%= index %>">View Details</a>
+            </div>
+            <% }) %>
+    </ul>
+    <a href="/new">Link to form</a>
+</body>
+
+</html>
