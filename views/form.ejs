@@ -1,6 +1,26 @@
-<h2>New Message</h2>
-<form action="/new" method="post">
-    <label for="authorName">Author name:</label><input name="authorName" type="text">
-    <label for="messageText">Message:</label><input name="messageText" type="text">
-    <button type="submit">Submit</button>
-</form>
+<head>
+    <title>Mini Message Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <h1>New Message</h1>
+        </div>
+    </nav>
+
+    <form action="/new" method="post">
+        <div class="mb-3">
+            <label for="authorName" class="form-label">Author name:</label>
+            <input type="text" name="authorName" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="messageText" class="form-label">Message:</label>
+            <input type="text" class="form-control" name="messageText">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a class="btn btn-primary" href="/" role="button">Return to home</a>
+</body>
